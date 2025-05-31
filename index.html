@@ -15,13 +15,14 @@
             font-family: Arial, sans-serif;
             text-align: center;
             background: url('https://cdn.glitch.global/3dd8b5c9-d8f3-40ed-8c04-1a31f2cc2158/logo.jpeg?v=1742412476155') no-repeat center center/cover;
-            height: 100vh;
+            background-size: cover;
             color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            min-height: 100vh;
             backdrop-filter: blur(5px);
+            padding-bottom: 80px;
         }
 
         header {
@@ -33,53 +34,114 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         }
 
-        nav {
-            margin: 20px 0;
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 90%;
+            margin-top: 20px;
+            align-items: stretch;
         }
 
-        nav a {
-            background: rgba(255, 255, 255, 0.2);
-            color: rgb(7, 7, 7);
-            text-decoration: none;
-            padding: 12px 20px;
-            margin: 5px;
-            border-radius: 25px;
-            font-size: 18px;
-            transition: 0.3s;
-            display: inline-block;
-        }
-
-        nav a:hover {
-            background: rgba(255, 255, 255, 0.4);
-            transform: scale(1.1);
-        }
-
-        .contenido {
+        .producto {
             background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 15px;
-            max-width: 800px;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            min-height: 380px;
             box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        .contenido h2 {
-            margin-bottom: 15px;
-            font-size: 24px;
-            color: #ffcc00;
+        .producto img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
 
-        .contenido p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        .contenido h3 {
-            margin-top: 15px;
+        .producto h3 {
             font-size: 20px;
             color: #ffcc00;
+            margin: 10px 0;
         }
+
+        .producto p {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .producto strong {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            padding: 10px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            transition: 0.3s;
+            width: 80%;
+            margin: auto;
+        }
+
+        .btn-whatsapp img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1ebe57;
+            transform: scale(1.1);
+        }
+        nav {
+      background-color: #111;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
     </style>
+
 </head>
+</head>
+<body>
+
+    <header>FT Streaming - Tu Mejor Opción </header>
+   
+   
+    <nav>
+        <a href="streaming.html">Streaming</a>
+        <a href="tv.html">TV Digital</a>
+        <a href="libros.html">Libros</a>
+        <a href="juegos.html">Juegos</a>
+        <a href="seguidores.html">Seguidores</a>
+        <a href="fisico.html">Importaciones</a>
+        
+    </nav>
 <body>
 
     <header>FT Streaming - Tu Mejor Opción </header>
